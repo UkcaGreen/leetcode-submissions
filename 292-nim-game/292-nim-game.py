@@ -1,3 +1,3 @@
 class Solution:
     def canWinNim(self, n: int) -> bool:
-        return n % 4
+        return int(bin(n)[2:][-2:])
