@@ -1,13 +1,8 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+
+        from collections import Counter
         
-        counts = {}
-
-        for n in nums:
-
-            if n not in counts:
-                counts[n] = 0
-
-            counts[n] += 1
-
-        return sorted(counts.keys(), key=lambda k: counts[k], reverse=True)[:k]
+        counts = Counter(nums)
+        
+        return [e[0] for e in counts.most_common(k)]
