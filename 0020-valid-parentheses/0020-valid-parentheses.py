@@ -1,29 +1,29 @@
 class Solution:
     
-    parentheses = {
-        ")": "(",
-        "]": "[",
-        "}": "{",
-    }
-    
     def isValid(self, s: str) -> bool:
-        
+
         stack = []
         
-        for c in s:         
-            if c in "([{":
+        for c in s:
+            
+            if c in ["(", "[", "{"]:
                 stack.append(c)
-            if c in "}])":
-                if len(stack) == 0:
-                    return False
+                continue
                 
-                if stack[-1] == self.parentheses[c]:
-                    stack.pop()
-                else:
-                    return False
+            if (
+                len(stack) == 0
+                or (c == ")" and stack[-1] != "(")
+                or (c == "]" and stack[-1] != "[")
+                or (c == "}" and stack[-1] != "{")
+            ):
+                return False
+            
+            stack.pop()
         
         return len(stack) == 0
                 
+                
+            
                 
                 
                 
