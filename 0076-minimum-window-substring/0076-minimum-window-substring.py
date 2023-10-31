@@ -16,8 +16,6 @@ class Solution:
             
             sub_str = s[l:r]
             
-            any(counts[k] < target_counts[k] for k in target_counts)
-            
             if not all(is_met.values()):
                 
                 r += 1
