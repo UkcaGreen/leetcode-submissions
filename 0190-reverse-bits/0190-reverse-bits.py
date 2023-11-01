@@ -3,15 +3,14 @@ class Solution:
         
         ans, i = 0, 0
         
-        while n > 0 or i < 32:
+        for i in range(32):
             
-            digit = n % 2
+            digit = n & 1
             
             n = n >> 1
             ans = ans << 1
             
-            ans += digit
-            i += 1
+            ans |= digit
             
 
             
