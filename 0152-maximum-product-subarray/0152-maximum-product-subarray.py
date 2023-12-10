@@ -10,8 +10,6 @@ class Solution:
             if n == 0:
                 mx, mn = 1, 1
                 continue
-                
-            tmp = mx
             
             mx, mn = max(mx * n, mn * n, n), min(mx * n, mn * n, n)
             
