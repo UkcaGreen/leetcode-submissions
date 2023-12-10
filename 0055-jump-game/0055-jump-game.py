@@ -1,18 +1,16 @@
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         
-        from functools import cache
+        horizon = 0
+        i = 0
         
-        @cache
-        def foo(i):
+        while horizon >= i:
             
-            if i >= len(nums) - 1:
+            horizon = max(horizon, i+nums[i])
+            
+            if horizon >= len(nums) - 1:
                 return True
             
-            if nums[i] == 0:
-                return False
-            
-            return any(foo(i + x + 1) for x in reversed(range(nums[i])))
+            i += 1
         
-        return foo(0)
-                
+        return False
