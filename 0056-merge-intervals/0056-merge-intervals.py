@@ -7,8 +7,6 @@ class Solution:
 
         for l, r in intervals[1:]:
             
-            print(l, r)
-            
             last_l, last_r = ans[-1]
             
             if l > last_r:
