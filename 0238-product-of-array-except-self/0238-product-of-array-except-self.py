@@ -1,24 +1,22 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:    
         
+        from collections import Counter
         from functools import reduce
+        
+        count = Counter(nums)
+        
+        if count[0] >= 2:
+            return [0] * len(nums)
+        
+        product_of_non_zero_elements = reduce(lambda x, y: x * y, [e for e in nums if e != 0])
+        
+        if count[0] == 1:
+            return [0 if e != 0 else product_of_non_zero_elements for e in nums ]
+        
+        if count[0] == 0:        
+            return [product_of_non_zero_elements // e for e in nums]
 
-        zero_count = nums.count(0)
-        
-        if zero_count > 1:
-            return [0 for n in nums]
-        
-        non_zero_nums = [n for n in nums if n != 0]
-        
-        non_zero_product = 1
-        
-        for n in non_zero_nums:
-            non_zero_product *= n
-        
-        if zero_count == 1:
-            return [0 if n != 0 else non_zero_product for n in nums]
-        
-        return [non_zero_product // n for n in nums]
     
 
             
