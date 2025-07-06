@@ -2,6 +2,23 @@ from functools import cache
 
 class Solution:
     def numMovesStones(self, a: int, b: int, c: int) -> List[int]:
+
+        x, y, z = sorted([a, b, c])
+
+        max_moves = z-x-2
+
+        if x+2 == z:
+            min_moves = 0
+        elif x+1 == y or y+1 == z:
+            min_moves = 1
+        elif x+2 == y or y+2 == z:
+            min_moves = 1
+        else:
+            min_moves = 2
+
+        return min_moves, max_moves
+
+        # alternative solution with recursion
         
         @cache
         def util(x, y, z):
