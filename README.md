@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/UkcaGreen/leetcode-submissions/tree/master/0234-palindrome-linked-list) |
+| [2299-merge-nodes-in-between-zeros](https://github.com/UkcaGreen/leetcode-submissions/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Two Pointers
 |  |
 | ------- |
@@ -45,4 +46,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/UkcaGreen/leetcode-submissions/tree/master/0234-palindrome-linked-list) |
+## Simulation
+|  |
+| ------- |
+| [2299-merge-nodes-in-between-zeros](https://github.com/UkcaGreen/leetcode-submissions/tree/master/2299-merge-nodes-in-between-zeros) |
 <!---LeetCode Topics End-->
