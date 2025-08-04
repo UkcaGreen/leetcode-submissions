@@ -50,4 +50,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2299-merge-nodes-in-between-zeros](https://github.com/UkcaGreen/leetcode-submissions/tree/master/2299-merge-nodes-in-between-zeros) |
+## Hash Table
+|  |
+| ------- |
+| [1160-letter-tile-possibilities](https://github.com/UkcaGreen/leetcode-submissions/tree/master/1160-letter-tile-possibilities) |
+## String
+|  |
+| ------- |
+| [1160-letter-tile-possibilities](https://github.com/UkcaGreen/leetcode-submissions/tree/master/1160-letter-tile-possibilities) |
+## Backtracking
+|  |
+| ------- |
+| [1160-letter-tile-possibilities](https://github.com/UkcaGreen/leetcode-submissions/tree/master/1160-letter-tile-possibilities) |
+## Counting
+|  |
+| ------- |
+| [1160-letter-tile-possibilities](https://github.com/UkcaGreen/leetcode-submissions/tree/master/1160-letter-tile-possibilities) |
 <!---LeetCode Topics End-->
